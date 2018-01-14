@@ -1,22 +1,11 @@
-// $(window).scroll(function () {
-//     if ($(window).scrollTop() >= 115) {
-//         $('.coin-list__header').addClass('fixed');
-//     } else {
-//         $('.coin-list__header').removeClass('fixed');
-//     }
-
-//     console.log(window.scrollY);
-// });
-
 function init() {
     // get json file with currencies
-    $.getJSON('https://api.coinmarketcap.com/v1/ticker/?limit=20', coinsOut);
+    $.getJSON('https://api.coinmarketcap.com/v1/ticker/?limit=20', printCoinsCurrenciesOnPage);
 };
 
-function coinsOut(data) {
-    // print coins on page 
+function printCoinsCurrenciesOnPage(data) {
 
-    var out = " ";
+    let out = "";
     for (const key in data) {
         console.log(data[key].market_cap_usd);
 
@@ -41,12 +30,23 @@ function coinsOut(data) {
         out += `<div class="coins-list__row-market-cap"><span><i>$</i>${data[key].market_cap_usd}</span></div>`;
         out += '</div>';
         out += `<div class="col-lg-3">`;
-        out += `<div class="coins-list__row-change"><span>${data[key].percent_change_24h}</span></div>`;
+        out += `<div class="coins-list__row-change"><span>${data[key].percent_change_24h}<img src="assets/svg/arrow-down-red.svg" alt="" width="5" height="7"></span></div>`;
         out += `</div></div></div></div>`;
     };
 
-    $('.coin-list__content').html(out);
+    $('.coins-list__content').html(out);
+
+    // count values in footer info blocks
+
+    var totalMarketCap = 0;
+    var sum;
+    for (var i = 0; i < data.length; i++) {
+        sum += data[i];
+    }
+    console.log(sum);
 };
+
+
 
 $(document).ready(function () {
     init();

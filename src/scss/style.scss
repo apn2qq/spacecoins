@@ -22,7 +22,6 @@ body {
 
 .header__logo-descr {
     display: inline-block;
-    margin-top: -2px;
 }
 
 .header__logo-img {
@@ -90,6 +89,7 @@ body {
     padding-top: 3rem;
     .row {
         justify-content: center;
+        padding-bottom: 5rem;
     }
 }
 
@@ -99,12 +99,44 @@ body {
 
 .footer-inner {
     border-top: 1px solid #d6e2eb;
+    padding: 1.5rem 0;
     .row {
         align-items: center;
         justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0;
     }
 }
 
 .footer-inner__nav {
     display: flex;
+}
+
+.coins-list__pagination {
+    background-color: #fff;
+    padding: 3rem 0;
+    .row {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.footer-inner__nav-item {
+    margin-right: 1.5rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.to-top {
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }

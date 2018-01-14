@@ -13,6 +13,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     vertical-align: middle;
+    letter-spacing: -0.9px;
 }
 
 .header__announcement {
@@ -137,4 +138,16 @@ body {
         color: #8f99af;
         display: inline-block;
     }
+}
+
+.footer-inner__nav-link {
+    color: #6f7483;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.to-top {
+    color: #6f7483;
+    text-decoration: none;
+    font-size: 0.95rem;
 }

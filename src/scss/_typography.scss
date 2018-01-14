@@ -35,7 +35,7 @@ body {
     }
 }
 
-.coin-list__header-title {
+.coins-list__header-title {
     color: #acb1bf;
     font-weight: 700;
     font-size: 0.69rem;
@@ -91,22 +91,22 @@ body {
     }
 }
 
-.coin-list__row-coin-position {
+.coins-list__row-coin-position {
     color: #8f99af;
     display: inline-block;
     font-size: 1rem;
     font-weight: 700;
 }
 
-.coin-list__row-coin-name {
+.coins-list__row-coin-name {
     color: #444956;
     display: inline-block;
     font-size: 1rem;
     font-weight: 700;
 }
 
-.coin-list__row-price,
-.coin-list__row-market-cap {
+.coins-list__row-price,
+.coins-list__row-market-cap {
     i {
         color: #acb1bf;
         font-weight: 700;
@@ -116,7 +116,7 @@ body {
     }
 }
 
-.coin-list__row-change {
+.coins-list__row-change {
     font-weight: 700;
     color: #ff6060;
 }

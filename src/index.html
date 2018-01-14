@@ -18,39 +18,66 @@
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" deffer></script>
+    <script src="assets/js/common.js" deffer></script>
+
+
 </head>
 
 <body>
+    <!-- Page preloader -->
+    <!-- <div class="preloader">
+        <img src="assets/svg/rocket.svg" alt="" height="150" width="150">
+    </div>
+    <style>
+        .preloader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #000;
+            color: #fff;
+            z-index: 9999999;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('.preloader').delay(1000).fadeOut(1000);
+
+        });
+    </script> -->
     <!-- Header -->
     {% include "header.html" %}
     <!-- Content -->
-    <section class="section coin-list">
-        <div class="coin-list__header">
+    <section class="section coins-list">
+        <div class="coins-list__header">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <span class="coin-list__header-title">CRYPTOCURRENCY</span>
+                        <span class="coins-list__header-title">CRYPTOCURRENCY</span>
                     </div>
                     <div class="col-lg-3">
-                        <span class="coin-list__header-title">Price</span>
+                        <span class="coins-list__header-title">Price</span>
                     </div>
                     <div class="col-lg-3">
-                        <span class="coin-list__header-title">Market cup</span>
+                        <span class="coins-list__header-title">Market cup</span>
                     </div>
                     <div class="col-lg-3">
-                        <span class="coin-list__header-title">24H CHANGE</span>
+                        <span class="coins-list__header-title">24H CHANGE</span>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="coin-list__content"></div>
         {% include "coins.html" %}
-        <div class="coin-list__shadow"></div>
+        <div class="coins-list__shadow"></div>
     </section>
     <!-- Footer -->
     {% include "footer.html" %}
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/common.js"></script>
+
+
 </body>
 
 </html>

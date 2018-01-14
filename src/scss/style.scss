@@ -31,7 +31,7 @@ body {
     margin-right: 8px;
 }
 
-.coin-list__header {
+.coins-list__header {
     position: sticky;
     top: 0;
     z-index: 3;
@@ -41,36 +41,36 @@ body {
     padding: 0.5rem 0;
 }
 
-.coin-list__row {
+.coins-list__row {
     background-color: #fff;
     border-bottom: 1px solid #eef1f5;
     padding: 1.5rem 0;
 }
 
-.coin-list__row-coin {
+.coins-list__row-coin {
     display: flex;
     align-items: center;
 }
 
-.coin-list__row {
+.coins-list__row {
     .row {
         align-items: center;
     }
 }
 
-.coin-list__row-coin-image {
+.coins-list__row-coin-image {
     margin: 0 1.5rem;
 }
 
-.coin-list__row-price,
-.coin-list__row-market-cap {
+.coins-list__row-price,
+.coins-list__row-market-cap {
     i {
         display: inline-block;
         margin-right: 0.2rem;
     }
 }
 
-.coin-list__shadow {
+.coins-list__shadow {
     height: 20px;
     background: #3c3c81;
     background: linear-gradient(rgba(171, 176, 179, 0.15), rgba(171, 176, 179, 0));

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+.header__logo {
+    text-decoration: none;
+}
+
+.header__logo-descr {
+    font-size: 1.4rem;
+    color: #5f6d85;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.header__announcement {
+    vertical-align: middle;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: #808897;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+}
+
+.header__announcement {
+    &::before {
+        content: url(../svg/bolt.svg);
+        display: inline-block;
+        width: 9px;
+        height: 15px;
+        vertical-align: middle;
+        margin-right: 7px;
+    }
+}
+
+.coin-list__header-title {
+    color: #acb1bf;
+    font-weight: 700;
+    font-size: 0.69rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn {
+    font-family: 'Karla', sans-serif;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: #bcbdc1;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+    transition: background-color 100ms ease-out;
+    letter-spacing: 1px;
+}
+
+.btn--green {
+    padding: 10px 25px;
+    background-color: #3cd483;
+    &:hover {
+        background-color: darken(#3cd483, 8%);
+    }
+}
+
+.header__section {
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 3px;
+    }
+    .btn--green {
+        vertical-align: middle;
+    }
+}
+
+.btn--search {
+    background-color: transparent;
+}
+
+.btn--language {
+    padding: 10px 25px;
+    &:hover {
+        background-color: darken(#bcbdc1, 8%);
+    }
+}

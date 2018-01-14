@@ -1,0 +1,46 @@
+@import "reset";
+@import "grid";
+@import "base";
+@import "typography";
+body {
+    height: 300vh;
+}
+
+.header {
+    padding: 1.5rem;
+    .row {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header__logo {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.header__logo-descr {
+    display: inline-block;
+    margin-top: -2px;
+}
+
+.header__logo-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.coin-list__header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #ecf1f4;
+    border-bottom: 1px solid #d6e2eb;
+    border-top: 1px solid #d6e2eb;
+    padding: 0.5rem 0;
+}
+
+.coin-list__row {
+    background-color: #fff;
+    border-bottom: 1px solid #eef1f5;
+}

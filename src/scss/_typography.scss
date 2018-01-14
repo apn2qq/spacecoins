@@ -90,3 +90,51 @@ body {
         background-color: darken(#bcbdc1, 8%);
     }
 }
+
+.coin-list__row-coin-position {
+    color: #8f99af;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.coin-list__row-coin-name {
+    color: #444956;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.coin-list__row-price,
+.coin-list__row-market-cap {
+    i {
+        color: #acb1bf;
+        font-weight: 700;
+    }
+    span {
+        color: #444956;
+    }
+}
+
+.coin-list__row-change {
+    font-weight: 700;
+    color: #ff6060;
+}
+
+.footer__info-block-title {
+    color: #8f99af;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.footer__info-block-value {
+    vertical-align: middle;
+    color: #444956;
+    font-weight: 700;
+    font-size: 1.3rem;
+    i {
+        color: #8f99af;
+        display: inline-block;
+    }
+}

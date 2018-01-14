@@ -3,10 +3,11 @@
 @import "base";
 @import "typography";
 body {
-    height: 300vh;
+    background-color: #ecf1f4;
 }
 
 .header {
+    background-color: #fff;
     padding: 1.5rem;
     .row {
         align-items: center;
@@ -43,4 +44,67 @@ body {
 .coin-list__row {
     background-color: #fff;
     border-bottom: 1px solid #eef1f5;
+    padding: 1.5rem 0;
+}
+
+.coin-list__row-coin {
+    display: flex;
+    align-items: center;
+}
+
+.coin-list__row {
+    .row {
+        align-items: center;
+    }
+}
+
+.coin-list__row-coin-image {
+    margin: 0 1.5rem;
+}
+
+.coin-list__row-price,
+.coin-list__row-market-cap {
+    i {
+        display: inline-block;
+        margin-right: 0.2rem;
+    }
+}
+
+.coin-list__shadow {
+    height: 20px;
+    background: #3c3c81;
+    background: linear-gradient(rgba(171, 176, 179, 0.15), rgba(171, 176, 179, 0));
+    margin: 0 0 35px 0;
+}
+
+.footer__info-block {
+    border: 1px solid #d6e2eb;
+    border-radius: 5px;
+    padding: 1.5rem;
+    span {
+        display: block;
+    }
+}
+
+.footer {
+    padding-top: 3rem;
+    .row {
+        justify-content: center;
+    }
+}
+
+.footer__info-block-title {
+    padding-bottom: 1.4rem;
+}
+
+.footer-inner {
+    border-top: 1px solid #d6e2eb;
+    .row {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer-inner__nav {
+    display: flex;
 }

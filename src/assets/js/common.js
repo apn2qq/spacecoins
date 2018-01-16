@@ -36,7 +36,7 @@ function printCoinsCurrenciesOnPage(data) {
         out += `<div class="coins-list__row">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-3 col-lg-3">
                         <div class="coins-list__row-coin">
                             <div class="coins-list__row-coin-position">
                                 <span>${data[key].rank}</span>
@@ -49,19 +49,19 @@ function printCoinsCurrenciesOnPage(data) {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-3 col-lg-3">
                         <div class="coins-list__row-price">
                             <span>
                                 <i>$</i>${data[key].price_usd}</span>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-3 col-lg-3 d-sm-none">
                         <div class="coins-list__row-market-cap">
                             <span>
                                 <i>$</i>${data[key].market_cap_usd}</span>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-3 col-lg-3">
                         <div class="coins-list__row-change">
                             <span>${data[key].percent_change_24h}
                                 <img src="assets/svg/arrow-down-red.svg" alt="" width="5" height="7">

@@ -45,7 +45,7 @@ function printCoinsCurrenciesOnPage(data) {
                                 <i>$</i>${data[key].price_usd}</span>
                         </div>
                     </div>
-                    <div class="col-3 col-lg-3">
+                    <div class="col-3 col-lg-3 d-none d-md-block">
                         <div class="coins-list__row-market-cap">
                             <span>
                                 <i>$</i>${data[key].market_cap_usd}</span>

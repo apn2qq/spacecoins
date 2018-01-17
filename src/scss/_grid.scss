@@ -1,51 +1,52 @@
+// Container widths
 //
-// Grid Options
+// Set the container width, and override it for fixed navbars in media queries.
+
+@if $enable-grid-classes {
+  .container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+}
+
+// Fluid container
 //
-// To avoid your options getting overridden by an update,
-// copy and paste the below options to your own sass file
-// and include it before this file.
+// Utilizes the mixin meant for fixed width containers, but with 100% width for
+// fluid, full width layouts.
 
-// Grid breakpoints
+@if $enable-grid-classes {
+  .container-fluid {
+    @include make-container();
+  }
+}
+
+// Row
 //
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
+// Rows contain and clear the floats of your columns.
 
-$grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px
-) !default;
+@if $enable-grid-classes {
+  .row {
+    @include make-row();
+  }
 
+  // Remove the negative margin from default .row, then the horizontal padding
+  // from all immediate children columns (to prevent runaway style inheritance).
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
 
-// Grid containers
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+// Columns
 //
-// Define the maximum width of `.container` for different screen sizes.
+// Common styles for small and large grid columns
 
-$container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-        xl: 1140px
-) !default;
-
-
-// Grid columns
-//
-// Set the number of columns and specify the width of the gutters.
-
-$grid-columns: 12 !default;
-$grid-gutter-width: 30px !default;
-
-// END of Grid Options
-
-
-// Bootstrap file imports
-@import "breakpoints/mixins/breakpoints";
-@import "grid/bootstrap-grid";
-@import "sizing/utilities/sizing";
-@import "layout/utilities/display";
-@import "layout/utilities/spacing";
-@import "layout/mixins/visibility";
-@import "layout/utilities/visibility";
+@if $enable-grid-classes {
+  @include make-grid-columns();
+}

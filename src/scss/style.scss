@@ -52,8 +52,12 @@ body {
 }
 
 .coins-list__row {
+    transition: 0.4s all;
     .row {
         align-items: center;
+    }
+    &:hover {
+        background-color: #fdfdfd;
     }
 }
 
